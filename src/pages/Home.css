@@ -1,0 +1,78 @@
+.home__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .home {
+    border: 2px red solid;
+    height: 100vh;
+  }
+  .home__wrapper {
+    border: 2px yellow solid;
+    height: 100%;
+    display: flex;
+  }
+  .home__left {
+    flex: 0.5;
+    border: 2px red solid;
+    padding: 10px 10px 10px 40px;
+  }
+  .home__leftLogo {
+    padding: 0px 20px;
+    margin-bottom: 15px;
+  }
+  .home__twitterIcon {
+    color: var(--logo-blue);
+    width: 45px;
+    height: 45px;
+    padding: 7px;
+    border-radius: 50%;
+  }
+  .home__twitterIcon:hover {
+    background-color: var(--hover-blue);
+    transition: 0.3s ease-in;
+  }
+  .home__leftLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+  }
+  .home__leftLinks a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--dark-text);
+    border-radius: 80px;
+    transition: 0.3s ease-in;
+  }
+  .home__leftLinks a:hover {
+    background-color: var(--hover-gray);
+  }
+  .home__leftLinkIcon {
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  .home__leftLinkText {
+    font-size: 20px;
+  }
+  .home__middle {
+    flex: 1;
+    border: 2px red solid;
+    overflow-y: scroll;
+  }
+  .home__right {
+    flex: 0.6;
+    border: 2px red solid;
+  }
+  .home__leftTweetBtn {
+    padding: 15px 20px;
+    background-color: var(--btn-blue);
+    color: var(--white-text);
+    border: none;
+    border-radius: 80px;
+    width: 80%;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
